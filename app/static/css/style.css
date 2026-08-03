@@ -143,6 +143,37 @@ a:focus-visible {
     outline-offset: 3px;
 }
 
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #ffffff;
+}
+
+th,
+td {
+    padding: 8px 10px;
+    border: 1px solid #b9c6d3;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    font-weight: 700;
+    background: var(--surface-muted);
+}
+
+.table-scroll {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+}
+
+.table-scroll table {
+    min-width: max-content;
+}
+
 @media (max-width: 720px) {
     body {
         padding: 14px;
