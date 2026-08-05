@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Exploratory Data Analysis (EDA)</h2>
+
+
+<h3>CGPA Histogram</h3>
+
+<img src = "{{  url_for('static', filename='charts/CGPA_Histogram.png') }}" width="600">
+
+<p>Visualizing Distribution of CGPA</p>
+
+<h3>CGPA vs Placement Status</h3>
+
+<img src = "{{  url_for('static', filename='charts/CGPA_vs_Placement_status.png') }}" width="600">
+
+<p>Relation between CGPA and Placement status</p>
+
+
+{% endblock %}
